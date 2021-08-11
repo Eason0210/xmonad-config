@@ -21,7 +21,7 @@ StartupNotify=false
 Categories=Application;  
 #+end_src
 
-add these lines to your ~~/.xinitrc~ file.
+add these lines to your ~$HOME/.xinitrc~ file.
 #+begin_src sh 
 #!/bin/sh
 if [ -x /usr/bin/nm-applet ] ; then
