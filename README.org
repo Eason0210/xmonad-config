@@ -1,0 +1,34 @@
+#+title: XMonad configuration 
+This is my personal xmonad configuration forked from [[https://github.com/Axarva/dotfiles-2.0][Axarva's dotfiles-2.0]]
+
+* Installation
+  Please read [[https://github.com/xmonad/xmonad/blob/master/INSTALL.md][Install XMonad]] and https://github.com/Axarva/dotfiles-2.0
+
+* Launch xmonad
+Make sure you can run ~xmonad --recompile~ successfully!
+
+On Arch Linux,create xmonad.desktop file in ~/usr/share/xsession/~
+#+begin_src
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Xmonad
+Comment=Lightweight X11 tiled window manager written in Haskell
+Exec=xmonad
+Icon=xmonad
+Terminal=false
+StartupNotify=false
+Categories=Application;  
+#+end_src
+
+add these lines to your ~~/.xinitrc~ file.
+#+begin_src sh 
+#!/bin/sh
+if [ -x /usr/bin/nm-applet ] ; then
+   nm-applet --sm-disable &
+fi
+
+exec xmonad  
+#+end_src
+
+
