@@ -341,6 +341,8 @@ myStartupHook = do
   spawnOnce "picom --experimental-backends"
   spawnOnce "greenclip daemon"
   spawnOnce "dunst"
+  spawnOnce "exec /usr/bin/fcitx5"
+  spawnOnce "exec /usr/bin/qv2ray %u"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
