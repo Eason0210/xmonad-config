@@ -31,4 +31,27 @@ fi
 exec xmonad  
 #+end_src
 
+* AutoLogin
+[[https://wiki.archlinux.org/title/SDDM][SDDM]] supports automatic login through its configuration file, edit its configuration:
+
+~/etc/sddm.conf.d/kde_settings.conf~
+#+begin_src 
+[Autologin]
+Relogin=false
+Session=xmonad
+User=aqua
+
+[General]
+HaltCommand=/usr/bin/systemctl poweroff
+RebootCommand=/usr/bin/systemctl reboot
+
+[Theme]
+Current=breeze
+
+[Users]
+MaximumUid=60000
+MinimumUid=1000  
+#+end_src
+
+  
 
