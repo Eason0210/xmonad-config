@@ -2,7 +2,7 @@
 This is my personal xmonad configuration forked from [[https://github.com/Axarva/dotfiles-2.0][Axarva's dotfiles-2.0]]
 
 * Installation
-  Please read [[https://github.com/xmonad/xmonad/blob/master/INSTALL.md][Install XMonad]] and https://github.com/Axarva/dotfiles-2.0
+  Please read [[https://github.com/xmonad/xmonad/blob/master/INSTALL.md][Install XMonad]] and https://github.com/Eason0210/dotfiles-2.0 
 
 * Launch xmonad
 Make sure you can run ~xmonad --recompile~ successfully!
